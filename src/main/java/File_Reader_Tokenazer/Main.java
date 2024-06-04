@@ -11,11 +11,24 @@ public class Main {
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in)));
                 PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(out)));) {
 
+            // Деление по пробелам
             bufferedReader.lines().forEach(x -> {
-                StringTokenizer stringTokenizer = new StringTokenizer(x, "Java", true);
-                while (stringTokenizer.hasMoreTokens()) {
-                    printWriter.println("Token: " + stringTokenizer.nextToken());
+                String [] arrayString = x.split(" ");
+                for (String str : arrayString){
+                    // вывод в консоль найденный текст по matches
+                    if (str.matches("(H[a-zA-Z]*[0-5])")){
+                        System.out.println(str);
+                    }
+                    printWriter.println(str);
                 }
+
+
+
+
+//                StringTokenizer stringTokenizer = new StringTokenizer(x, "Java", true);    (Деление по буквам)
+//                while (stringTokenizer.hasMoreTokens()) {
+//                    printWriter.println("Token: " + stringTokenizer.nextToken());
+//                }
 
 
 //            StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());
