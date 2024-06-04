@@ -10,14 +10,19 @@ public class Main {
 
         try (
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in)));
-                PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(out)));
+                PrintWriter printWriter =new PrintWriter(new OutputStreamWriter(new FileOutputStream(out)));
         ) {
-         printWriter.println(bufferedReader.readLine().toUpperCase(Locale.ROOT));
+
+            bufferedReader.lines().forEach(string -> printWriter.println(string.toUpperCase(Locale.ROOT)));  // перевод всего текста в верхний регистр
+
+//         printWriter.println(bufferedReader.readLine().toUpperCase(Locale.ROOT)); - перевод в веръний регистр одной строки.
+
 
         } catch (FileNotFoundException e) {
             System.out.println("Not file");
         } catch (IOException e) {
             throw new RuntimeException(e);
+
         }
     }
 }
