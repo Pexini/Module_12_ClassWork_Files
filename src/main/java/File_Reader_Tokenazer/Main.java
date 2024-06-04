@@ -16,7 +16,7 @@ public class Main {
                 String [] arrayString = x.split(" ");
                 for (String str : arrayString){
                     // вывод в консоль найденный текст по matches
-                    if (str.matches("(H[a-zA-Z]*[0-5])")){
+                    if (str.matches("(H[a-zA-Z]*[0-5])")){ // вывод по правилу все что начинается с заглавной Н и заканчивается на цифру от 0 до 5 пример : Hello2 / H3
                         System.out.println(str);
                     }
                     printWriter.println(str);
