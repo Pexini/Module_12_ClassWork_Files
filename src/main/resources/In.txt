@@ -1,0 +1,4 @@
+As the world of modern application development rapidly evolves, Java continues to adapt to keep pace. This affords enterprises the ability to accelerate mission-critical
+application development reliant on Java and provide developers a programming language and platform that efficiently and effectively address app development from on-premises to the cloud.
+In this keynote, Java luminaries from Oracle explore modern Java features that enable next-gen applications, as well as cover how Oracle’s ongoing Java technology leadership and ecosystem
+stewardship are creating a contemporary language and platform that help advance developer productivity and Java community participation.
