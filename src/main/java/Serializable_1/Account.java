@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Account implements Serializable {
     private String name;
     private int age;
-    private String mail;
+    private transient String mail; //Если хотим скрыть поле от Сериализации
 
     public Account(String name, int age, String mail) {
         this.name = name;
